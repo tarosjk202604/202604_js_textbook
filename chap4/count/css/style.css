@@ -19,3 +19,7 @@ body {
 #count {
     font-size: 1.5rem;
 }
+
+.alert {
+    color: #f66;
+}
