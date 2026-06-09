@@ -1,0 +1,24 @@
+@charset 'utf-8';
+
+body {
+    text-align: center;
+}
+
+h1 {
+    color: #fff;
+    display: inline-block;
+    background-image: linear-gradient(90deg, #0bd, #0bd 50%, #fff 50%, #fff);
+    background-size: 200% 100%;
+    padding: .5rem 1rem;
+}
+
+#blob {
+    background: #0bd url(https://picsum.photos/id/324/500/300);
+    background-size: cover;
+    color: #fff;
+    width: 90%;
+    margin-inline: auto;
+    height: 60vh;
+    /* padding: 6rem 3rem; */
+    border-radius: 50%;
+}

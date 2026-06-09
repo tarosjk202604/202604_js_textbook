@@ -49,9 +49,19 @@ const lists = [
 console.log(lists);
 console.log(lists.length); // 配列内のデータ数のプロパティ
 console.log(lists[0]);
+console.log(lists[0].img);
 
 for (let i = 0; i < lists.length; i++) {
-    const content = `<div><img src="images/${lists[i]}" alt=""></div>`;
+    // const name = lists[i].name;
+    // const img = lists[i].img;
+    // const price = lists[i].price;
+    const { name, img, price } = lists[i];
+
+    const content = `<div>
+    <img src="images/${img}" alt="">
+    <h2>${name}</h2>
+    <p>${price}円</p>
+    </div>`;
 
     // タグが全て文字として表示されてしまう
     // menu.textContent = content;
