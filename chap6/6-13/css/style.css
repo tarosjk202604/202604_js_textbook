@@ -1,0 +1,27 @@
+@charset 'utf-8';
+
+body {
+    text-align: center;
+    padding: 1rem;
+}
+
+body::before {
+    content: '';
+    outline: 1px solid orange;
+    position: fixed;
+    inset: 50px 0;
+    pointer-events: none;
+}
+
+h1 {
+    margin: 50vh 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+#kirin {
+    opacity: 0;
+    translate: 200px 0;
+}

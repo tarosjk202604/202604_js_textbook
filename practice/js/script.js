@@ -31,3 +31,19 @@ convertBtn.addEventListener('click', () => {
     console.log(parseInt(inputNum.value));
     console.log(typeof parseInt(inputNum.value));
 });
+
+// ステップ4. 2つの入力欄から数値を取得し、数値に変換
+// 掛け算と切り捨てを実行 (multiplyAndFloorを呼び出す)
+// 結果をコンソールに出力
+const input1 = document.querySelector('#input1');
+const input2 = document.querySelector('#input2');
+const multiplyBtn = document.querySelector('#multiplyBtn');
+
+multiplyBtn.addEventListener('click', () => {
+    const input1Parsed = parseInt(input1.value);
+    const input2Parsed = parseInt(input2.value);
+    console.log(multiplyAndFloor(input1Parsed, input2Parsed));
+});
+
+// Numberオブジェクトに文字列の数字を渡すと数値変換される
+// Number('12.34') -> 12.34
