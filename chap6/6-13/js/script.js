@@ -49,6 +49,9 @@ const innerSample = (message) => {
     console.log(message);
 };
 
-sample(innerSample);
+// addEventListener('イベント', 関数)
+sample((message) => {
+    console.log(message);
+});
 
 // btn.addEventListener('click', (e) => {})
