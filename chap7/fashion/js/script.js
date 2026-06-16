@@ -114,3 +114,15 @@ menuClose.addEventListener('click', () => {
         }, menuOptions);
     });
 });
+
+// スクロールで要素表示
+const animateFade = () => {
+    console.log('ふわっ');
+};
+
+const fadeObserver = new IntersectionObserver(animateFade);
+
+const fadeElements = document.querySelectorAll('.fadein');
+fadeElements.forEach((fadeElement) => {
+    fadeObserver.observe(fadeElement);
+});
